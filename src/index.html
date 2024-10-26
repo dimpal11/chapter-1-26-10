@@ -1,0 +1,896 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="./output.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="js/script.js"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="./css/output.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/owlCmin.css">
+<link rel="stylesheet" href="css/owlcoresuel.css">
+
+</head>
+
+<body>
+
+    
+  <!-- Navbar -->
+  <nav class="  bg-[#ECF4F1] border-b border-[#C4EDD7]">
+    <div class=" flex justify-between items-center py-4 px-4 md:px-8">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="#" class="flex items-center text-[#43916F] font-bold text-xl">
+        <img src="image/logo.svg" alt="">
+        </a>
+      </div>
+
+      <!-- Menu items -->
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="#" class="text-[#43916F]  text-xs font-bold uppercase outfit">Home</a>
+        <a href="#" class="text-[#072B2C] text-xs font-bold uppercase outfit">Features</a>
+        <a href="#" class="text-[#072B2C]  text-xs font-bold uppercase outfit">About Us</a>
+        <a href="#" class="bg-[#105F62] text-white  py-2 px-4 rounded-sm outfit text-xs font-bold uppercase">Contact Us</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none lg:bg-[#105F62]">
+            <i class="fa-solid fa-bars text-xl"></i>
+
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        
+      <a href="#" class="block py-2 px-4 text-green-700 hover:bg-gray-100">Home</a>
+      <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Features</a>
+      <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">About Us</a>
+      <a href="#" class="block py-2 px-4 bg-teal-900 text-white hover:bg-teal-700">Contact Us</a>
+    </div>
+  </nav>
+
+
+      <!-- Hero Section -->
+      <section class="container mx-auto lg:mt-14 px-5 flex flex-col md:flex-row items-center lg:mb-10 md:py-10">
+        <!-- Text Content -->
+        <div class="md:w-1/2 mb-8 md:mb-0 m-2 container mx-auto lg:pl-20">
+          <h2 class="text-[#43916F] font-extrabold text-xl flex items-center outfit mb-5">
+            <span><img src="image/icoc.svg" alt=""></span>Effortless Financial Management
+          </h2>
+          <h1 class="text-[30px] xl:text-[64px] outfit text-2xl font-extrabold text-[#072B2C] mb-6 leading-[48px]  xl:leading-[72px]">
+            SIMPLIFY YOUR <br> ACCOUNTING WITH <br> 
+            <span class="text-[#43916F]">CHAPTER .1</span>
+          </h1>
+          <p class="text-[#072B2C] lg:text-base outfit font-normal mb-6">
+            Lorem ipsum dolor sit amet consectetur. Egestas orci a tellus nulla in faucibus <br> scelerisque lacus. Bibendum mus nibh orci vestibulum viverra sodales ornare <br>cursus. Risus cursus sapien eros mauris velit ut rutrum.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-[#105F62] outfit uppercase font-semibold p-[20px] text-sm  flex justify-center items-center text-white lg:py-3 lg:px-6 rounded-sm">Contact Us</a>
+            <a href="#" class="border border-[#072B2C] uppercase outfit text-sm font-semibold text-[#072B2C] flex justify-center items-center p-[20px] lg:py-3 lg:px-6 rounded-sm hover:bg-[#105F62] hover:text-[white] transition">Learn More</a>
+          </div>
+        </div>
+      
+        <!-- Image Section -->
+        <div class="md:w-1/2 flex flex-col items-center md:ml-[70px] lg:ml-0 container mx-auto lg:pl-36 mb-10 lg:mb-0">
+          <div class="relative w-full h-full overflow-hidden p-10">
+            <div id="slider" class="transition-opacity duration-500 ease-in-out">
+              <img id="image1" src="image/hero section.svg" alt="" class="w-full h-auto" />
+              <img id="image2" src="image/bro (1).svg" alt="" class="w-full h-auto hidden" />
+            </div>
+      
+            <!-- Prev, Next buttons and Dots in between -->
+            <div class="relative bottom-[-20px] left-0 right-0 flex justify-center items-center space-x-4 mb-4">
+              <button id="prev" class="bg-white p-2 rounded border-[#43916F] border">❮</button>
+              
+              <!-- Dots between buttons -->
+              <div class="flex space-x-2">
+                <span class="dot w-3 h-3 bg-[#BEDACF] rounded-full"></span>
+                <span class="dot w-3 h-3 bg-[#BEDACF] rounded-full"></span>
+              </div>
+      
+              <button id="next" class="bg-white p-2 rounded border-[#43916F] border">❯</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- KEY FEATURES start -->
+<!-- <section class="bg-[#ECF4F1] py-5">
+    <div class="flex justify-center items-center gap-3 py-10">
+        <img src="image/keyicon (2).svg" alt="">
+        KEY FEATURES
+        <img src="image/keyicon (1).svg" alt="">
+    </div>
+
+    <div class="">
+        <h2 class="items-center flex justify-center font-extrabold text-4xl outfit uppercase pt-6">Everyday Business Accounting </h2>
+        <p class="items-center flex justify-center text-center outfit font-normal text-base ">Our accounting software simplifies everyday financial tasks, empowering you to manage your <br> finances effectively and achieve your business aspirations.</p>
+    </div>
+
+    <div class="container mx-auto">
+      
+        <div class="w-1/2">
+            <div class="bg-[#BEDACF]">
+                <img src="image/bro key.svg" alt="">
+            </div>
+        </div>
+
+        <div class="w-1/2">
+          <div>
+            <h2>Seamless GST Invoicing, E-invoicing, and E-way Bills Creation</h2>
+            <p>Easily comply with government regulations and create customizable & fully compliant GST invoices, e-invoices, e-way bills, quotations, and other essential documents via GST Accounting Software. You can directly send them over WhatsApp or email and track when your clients view your invoice. Easily send automated reminders to collect payments on time.</p>
+          </div>
+        </div>
+      
+    </div>
+</section> -->
+
+<section class="lg:py-12 bg-[#ECF4F1] md:p-10">
+  <!-- Title Section -->
+  <div class="flex justify-center items-center lg:gap-10 gap-5 py-10 text-[#43916F] font-extrabold outfit">
+    <img src="image/keyicon (2).svg" alt="">
+    KEY FEATURES
+    <img src="image/keyicon (1).svg" alt="">
+</div>
+
+<div class="pb-5 p-3">
+  <h1 class="flex justify-center outfit uppercase font-extrabold text-4xl text-[#072B2C] text-center pb-4">Everyday Business Accounting </h1>
+  <p class="flex justify-center text-center outfit text-base font-normal pb-10">Our accounting software simplifies everyday financial tasks, empowering you to manage your <br> finances effectively and achieve your business aspirations.</p>
+</div>
+
+  <!-- Left Image, Right Text (First Row) -->
+  <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 p-3 lg:p-0 ">
+      <!-- Left Side: Image -->
+      <div class="w-full bg-[#BEDACF] rounded-lg p-4">
+          <img src="image/bro key.svg" alt="Invoice Illustration" class="mx-auto">
+      </div>
+
+      <!-- Right Side: Text Section -->
+      <div class="w-full flex flex-col justify-center">
+          <h3 class="text-xl font-bold text-green-700 uppercase outfit">Seamless GST Invoicing, E-invoicing, <br> and E-way Bills Creation</h3>
+          <p class="text[#072B2C] mt-4 outfit text-base font-normal text-justify">
+            Easily comply with government regulations and create customizable & fully compliant GST invoices, e-invoices, e-way bills, quotations, and other essential documents via GST Accounting Software. You can directly send them over WhatsApp or email and track when your clients view your invoice. Easily send automated reminders to collect payments on time.
+          </p>
+          <button class="mt-6 w-28  border-2 border-[#072B2C]  px-4 py-2 rounded font-semibold  text-[#072B2C] hover:bg-[#072B2C] hover:text-white transition">
+              See More
+          </button>
+      </div>
+
+
+
+
+
+      <!-- left Side: Text Section  seccond part-->
+      <div class="w-full flex flex-col justify-center">
+        <h3 class="text-xl font-bold text-green-700 uppercase outfit">SSimplified GST Accounting, Ensure <br> 100% GST Compliance</h3>
+        <p class="text[#072B2C] mt-4 outfit text-base font-normal text-justify">
+          Automatically generate journal & voucher entries, balance sheets, trial balance reports, P&L statements, GSTR reports, and other important financial reports with Refrens GST Accounting Software.<br><br>
+
+Ensure compliance with all GST guidelines. Generate E-way Bills, E-invoices, GSTR reports, TDS reports, and more with ease on Refrens GST Accounting Software.<br>
+        </p>
+        <button class="mt-6 w-28  border-2 border-[#072B2C]  px-4 py-2 rounded font-semibold   text-[#072B2C] hover:bg-[#072B2C] hover:text-white transition">
+            See More
+        </button>
+    </div>
+
+
+     <!-- right Side: Image -->
+     <div class="w-full bg-[#BEDACF] rounded-lg p-4">
+      <img src="image/bro 1.svg" alt="Invoice Illustration" class="mx-auto">
+  </div>
+
+
+
+
+  <!-- /third start -->
+
+  <!-- Left Side: Image -->
+  <div class="w-full bg-[#BEDACF] rounded-lg p-4">
+    <img src="image/bro 2.svg" alt="Invoice Illustration" class="mx-auto">
+</div>
+
+<!-- Right Side: Text Section -->
+<div class="w-full flex flex-col justify-center">
+    <h3 class="text-xl font-bold text-green-700 uppercase outfit">Streamline Inventory & Expense <br> Management</h3>
+    <p class="text[#072B2C] mt-4 outfit text-base font-normal text-justify">
+     Automatically update inventory & stock items with every invoice or expense entry. Record & track all types of expenses with ease such as inventory purchases, employee salaries/reimbursements, and more. Get a detailed vendor management dashboard to track all your accounts payable in one place with Refrens GST accounting software.
+    </p>
+    <button class="mt-6 w-28  border-2 border-[#072B2C]  px-4 py-2 rounded font-semibold   text-[#072B2C] hover:bg-[#072B2C] hover:text-white transition">
+        See More
+    </button>
+</div>
+
+
+
+  </div>
+
+  <!-- Left Image, Right Text (Second Row) -->
+ 
+</section>
+
+      <!-- KEY FEATURES end -->
+
+
+
+<!-- MODULES START -->
+<section>
+  <!-- Section Header -->
+  <div class="flex  justify-center items-center gap-10 py-10 text-[#43916F] font-extrabold outfit uppercase">
+    <img src="image/keyicon (2).svg" alt="" class="w-12 sm:w-16"> <!-- Responsive Image Size -->
+    <p>Modules</p>
+    <img src="image/keyicon (1).svg" alt="" class="w-12 sm:w-16"> <!-- Responsive Image Size -->
+  </div>
+
+  <!-- Title Section -->
+  <div class="pb-5 p-3 lg:p-0 md:px-10">
+    <h1 class="text-center outfit uppercase font-extrabold text-2xl sm:text-4xl text-[#072B2C] pb-4">
+      Accounting and Billing Software
+    </h1>
+    <p class="text-center outfit text-sm sm:text-base font-normal pb-10">
+      Know what modules CHAPTER.1 accounting and billing software offers and how it can help you make your business <br class="hidden sm:inline"> compliance more easier. Apart from that, it also gives you insight with intuitive business reports.
+    </p>
+  </div>
+<!-- dot srction start -->
+<div class="container mx-auto p-8">
+  <div class="lg:flex items-start">
+    
+    <!-- Left side: Information boxes -->
+    <div class="flex-1 flex-col space-y-8 relative">
+      
+      <!-- Box 1 -->
+      <div class="flex items-center space-x-4 bg-[#ECF4F1] p-3 lg:w-[50%] lg:ml-[20%] relative lg:mb-10">
+        <div class="w-16 h-16 bg-gray-100 flex justify-center items-center rounded-md">
+          <!-- Icon -->
+          <img src="image/Article.svg" alt="" >
+        </div>
+        <div>
+          <h3 class="text-xs font-extrabold text-[#43916F] uppercase outfit">GST Accounting/ Reports</h3>
+          <p class="text-[#072B2C] text-[10px] outfit font-normal ">Automate GST calculations and maintain accurate <br> records for filing returns</p>
+        </div>
+         <!-- Dotted Line with Moving Dot -->
+         <div class="dot bg-green-600 w-3 h-3 absolute left-[360px] top-[40px] " id="border"></div>
+      <!-- <div class="absolute top-8 left-8 w-0.5 bg-transparent h-full border-l-[1px] border-dashed dashed border-[#072B2C]"id="borderH"></div> -->
+      
+      <div class="box1dot1 bg-green-600 w-[20px] h-[20px] rounded-full  absolute lg:left-[345px] border-2 border-white lg:top-[32px]"></div>
+
+      <div class="box1dot2 bg-green-600 w-[20px] h-[20px] rounded-full  absolute lg:left-[345px] border-2 border-white lg:top-[523px]"></div>
+
+      <!-- class="absolute top-8 left-8 w-0.5 bg-transparent h-full border-l-[1px] border-dashed dashed border-[#072B2C]" -->
+      </div>
+
+      <!-- Box 2 -->
+      <div class="flex items-center space-x-4 bg-[#ECF4F1] p-3 lg:w-[50%] lg:ml-[10%] relative lg:mb-10" >
+        <div class="w-16 h-16 bg-gray-100 flex justify-center items-center rounded-md">
+          <!-- Icon -->
+          <img src="image/Invoice.svg" alt="" >
+        </div>
+        <div>
+          <h3 class="text-xs font-extrabold text-[#43916F] uppercase outfit">Expense Tracking</h3>
+          <p class="text-[#072B2C] text-[10px] outfit font-normal ">Categorize and monitor business <br> expenses easily.</p>
+        </div>
+
+        <!-- Dotted Line with Moving Dot -->
+        <!-- <div class="dot bg-green-600 w-3 h-3 rounded-full absolute left-[-8px] top-8 dashed-dot2 "></div>
+        <div class="absolute top-8 left-8 w-0.5 bg-transparent h-full border-l-[1px] border-dashed dashed2 border-[#072B2C]"></div>
+        
+        <div class="dot bg-green-600 w-3 h-3 rounded-full absolute left-[-8px] top-8  dashed-dot-b2"></div> -->
+        <div class=" bg-green-600 w-3 h-3 absolute left-[360px] top-[40px] " id="border2"></div>
+        <div class="box2dot1 bg-green-600 w-[20px] h-[20px] rounded-full  absolute lg:left-[345px] border-2 border-white lg:top-[32px]"></div>
+
+        <div class="box2dot2 bg-green-600 w-[20px] h-[20px] rounded-full  absolute lg:left-[342px] border-2 border-white lg:top-[274px]"></div>
+
+      </div>
+
+      <!-- box 3 -->
+      <div class="flex items-center space-x-4 bg-[#ECF4F1] p-3 lg:w-[50%] ">
+        <div class="w-16 h-16 bg-gray-100 flex justify-center items-center rounded-md">
+          <!-- Icon -->
+          <img src="image/StackPlus.svg" alt="" >
+        </div>
+        <div>
+          <h3 class="text-xs font-extrabold text-[#43916F] uppercase outfit">Expense Tracking</h3>
+          <p class="text-[#072B2C] text-[10px] outfit font-normal ">Keep track of stock levels, manage orders, and <br> optimize inventory</p>
+        </div>
+        <!-- Dotted Line with Moving Dot -->
+        <!-- <div class="dot bg-green-600 w-3 h-3 rounded-full absolute left-[-8px] top-8 dashed-dot3 "></div>
+        <div class="dot bg-green-600 w-3 h-3 rounded-full absolute left-[-8px] top-8 dashed-dotmiddle "></div>
+        <div class="dot bg-green-600 w-3 h-3 rounded-full absolute left-[-8px] top-8 dashed-dotcenter "></div> -->
+
+        <div class="absolute top-[293px] left-[357px] w-[607px] h-[248px] bg-transparent border-dashed  border-[#072B2C] border-t-[1px]" id="border3"></div>
+        <div class="box3dot1 bg-green-600 w-[20px] h-[20px] rounded-full  absolute lg:left-[345px] border-2 border-white lg:top-[284px]"></div>
+        <div class="box3dot2 bg-green-600 w-[20px] h-[20px] rounded-full  absolute lg:left-[567px] border-2 border-white lg:top-[284px]"></div>
+        <div class="box3dot3 bg-green-600 w-[20px] h-[20px] rounded-full  absolute lg:left-[696px] border-2 border-white lg:top-[284px]"></div>
+
+        <!-- <div class="dot bg-green-600 w-3 h-3 absolute left-[360px] top-[40px] " id="border3"></div> -->
+
+      </div>
+
+
+
+      <!-- box 4 -->
+      <div class="flex items-center space-x-4 bg-[#ECF4F1] p-3 lg:w-[50%] lg:ml-[10%]">
+        <div class="w-16 h-16 bg-gray-100 flex justify-center items-center rounded-md">
+          <!-- Icon -->
+          <img src="image/Monitor.svg" alt="" >
+        </div>
+        <div>
+          <h3 class="text-xs font-extrabold text-[#43916F] uppercase outfit">Expense Tracking</h3>
+          <p class="text-[#072B2C] text-[10px] outfit font-normal ">Simplify the invoicing process with <br> electronic invoicing</p>
+        </div>
+       
+  
+      </div>
+
+
+      <!-- box 5 -->
+      <div class="flex items-center space-x-4 bg-[#ECF4F1] p-3 lg:w-[50%] lg:ml-[20%] ">
+        <div class="w-16 h-16 bg-gray-100 flex justify-center items-center rounded-md">
+          <!-- Icon -->
+          <img src="image/UsersThree.svg" alt="" >
+        </div>
+        <div>
+          <h3 class="text-xs font-extrabold text-[#43916F] uppercase outfit">Expense Tracking</h3>
+          <p class="text-[#072B2C] text-[10px] outfit font-normal ">Categorize and monitor business expenses easily.</p>
+        </div>
+        <!-- Dotted Line with Moving Dot -->
+        <!-- <div class="dot bg-green-600 w-3 h-3 rounded-full absolute left-[-8px] top-8 dashed-dot "></div>
+        <div class="absolute top-8 left-8 w-0.5 bg-transparent h-full border-l-[1px] border-dashed dashed border-[#072B2C]"></div>
+        
+        <div class="dot bg-green-600 w-3 h-3 rounded-full absolute left-[-8px] top-8  dashed-dot-b"></div> -->
+  
+      </div>
+      <!-- Dotted Line with Moving Dot -->
+      <!-- <div class="absolute top-8 left-8 w-0.5 bg-transparent h-full border-l-[1px] border-dashed border-[#072B2C]"></div>
+      <div class="dot bg-green-600 w-3 h-3 rounded-full absolute left-[-8px] top-8 "></div> -->
+
+    </div>
+
+    <!-- Right side: Person image -->
+    <div class="flex-1  flex justify-center items-center my-auto  lg:mt-[124px] ">
+      <img src="image/bro.svg" alt="Person at computer" class="broimage  " >
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- dot section  end -->
+
+  <!-- Modules Cards Section -->
+  <div class="bg-[#ECF4F1] lg:p-8 lg:m-20 p-3 md:m-5 rounded-3xl mb-10">
+    <div class="max-w-7xl mx-auto">
+      <!-- Title Section -->
+      <div class="text-center  mb-8 p-5 sm:p-10">
+        <h2 class="text-2xl lg:text-4xl font-extrabold text-[#072B2C] outfit">ACCOUNTING SOLUTIONS AND BENEFITS</h2>
+        <p class="text-[#072B2C] mt-2 outfit text-sm sm:text-base">
+          By leveraging these features and benefits, our accounting software provides a comprehensive and efficient <br class="hidden sm:inline"> solution for managing all aspects of your business finances.
+        </p>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center lg:text-start">
+          <div class="mb-4 bg-[#ECF4F1] w-[50px] lg:w-[70px] rounded-full flex items-center justify-center p-2 mx-auto lg:mx-0">
+            <img src="image/Scroll (1).svg" alt="Automated Invoicing">
+          </div>
+          <h3 class="lg:text-lg text-xl font-extrabold text-[#072B2C] outfit mt-4">AUTOMATED INVOICING</h3>
+          <p class="text-[#072B2C] mt-2 text-sm lg:text-base font-normal outfit">
+            Save time with automated GST-compliant <br> invoices, reducing manual errors and ensuring <br> timely billing for your business transactions.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center lg:text-start">
+          <div class="mb-4 bg-[#ECF4F1] w-[50px] lg:w-[70px] rounded-full flex items-center justify-center p-2 mx-auto lg:mx-0">
+            <img src="image/ChartPie.svg" alt="Financial Reports">
+          </div>
+          <h3 class="lg:text-lg text-xl font-extrabold text-[#072B2C] outfit mt-4">FINANCIAL REPORTS</h3>
+          <p class="text-[#072B2C] mt-2 text-sm lg:text-base font-normal outfit">
+            Access instant financial insights with <br> comprehensive reports, helping you make <br> informed business decisions anytime, anywhere.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center lg:text-start">
+          <div class="mb-4 bg-[#ECF4F1] w-[50px] lg:w-[70px] rounded-full flex items-center justify-center p-2 mx-auto lg:mx-0">
+            <img src="image/Monitor.svg" alt="E-Way Bill & E-Invoicing">
+          </div>
+          <h3 class="lg:text-lg text-xl font-extrabold text-[#072B2C] outfit mt-4">E-WAY BILL & E-INVOICING</h3>
+          <p class="text-[#072B2C] mt-2 text-sm lg:text-base font-normal outfit">
+            Generate E-Way bills and e-invoices directly <br> from the platform, ensuring compliance with tax <br> laws while streamlining your logistics.
+                    </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center lg:text-start">
+          <div class="mb-4 bg-[#ECF4F1] w-[50px] lg:w-[70px] rounded-full flex items-center justify-center p-2 mx-auto lg:mx-0">
+            <img src="image/Bank (1).svg" alt="Bank Reconciliation">
+          </div>
+          <h3 class="lg:text-lg text-xl font-extrabold text-[#072B2C] outfit mt-4">BANK RECONCILIATION</h3>
+          <p class="text-[#072B2C] mt-2 text-sm lg:text-base font-normal outfit">
+            Sync your bank accounts for seamless <br> reconciliation. Automatically import and match <br> transactions, reducing manual entry and errors.
+                    </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center lg:text-start">
+          <div class="mb-4 bg-[#ECF4F1] w-[50px] lg:w-[70px] rounded-full flex items-center justify-center p-2 mx-auto lg:mx-0">
+            <img src="image/ChartLineUp (1).svg" alt="Profit & Loss Tracker">
+          </div>
+          <h3 class="lg:text-lg text-xl font-extrabold text-[#072B2C] outfit mt-4">PROFIT & LOSS TRACKER</h3>
+          <p class="text-[#072B2C] mt-2 text-sm lg:text-base font-normal outfit">
+            Quickly assess your business's profitability with <br> detailed, real-time profit and loss statements, <br> helping you make informed financial decisions.          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center lg:text-start">
+          <div class="mb-4 bg-[#ECF4F1] w-[50px] lg:w-[70px] rounded-full flex items-center justify-center p-2 mx-auto lg:mx-0">
+            <img src="image/Devices.svg" alt="Multi-Device Access">
+          </div>
+          <h3 class="lg:text-lg text-xl font-extrabold text-[#072B2C] outfit mt-4">MULTI-DEVICE ACCESS</h3>
+          <p class="text-[#072B2C] mt-2 text-sm lg:text-base font-normal outfit">
+            Manage finances seamlessly across mobile, <br> tablet, and desktop with real-time updates and  <br> synchronized data.          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- MODULES END -->
+
+      
+<!-- ABOUT SECTION START  -->
+<section class="bg-[#ECF4F1] py-10">
+    <!-- Title Section -->
+    <div class="flex justify-center items-center lg:gap-10 py-10 text-[#43916F] font-extrabold outfit uppercase text-xl gap-4">
+      <img src="image/keyicon (2).svg" alt="">
+      aBOUT US
+      <img src="image/keyicon (1).svg" alt="">
+  </div>
+  <div class="p-2 lg:p-0">
+    <h2 class="font-extrabold lg:text-4xl text-2xl outfit text-center uppercase text-[#072B2C] lg:leading-[50px] mb-5">Innovating Financial Solutions for <br> Business Growth</h2>
+    <p class="text-[#072B2C] outfit text-center text-base font-normal mb-20">Founded with a commitment to revolutionize financial management, we empower businesses with cutting-edge software solutions tailored <br> to streamline operations and foster sustainable growth. Led by a team of industry experts, we prioritize customer satisfaction, continually <br>refining our products to meet evolving needs and exceed expectations in the dynamic business landscape.</p>
+    <h1 class="outfit font-extrabold text-4xl uppercase text-center text-[#072B2C] mb-10">dashboard</h1>
+  </div>
+
+
+    <!-- slider/start -->
+  <div class="slider">
+    <div class="owl-carousel owl-theme mb-10">
+      <!-- 1st item -->
+      <div class="item slider-card">
+        <div class="flex justify-center items-center ">
+          <img src="image/receipt.svg" alt="" >
+        </div>
+      </div>
+  
+
+
+      <!-- 2 -->
+      <div class="item slider-card">
+        <div class="flex justify-center items-center">
+          <img src="image/reporting.svg" alt="" class="w-full">
+        </div>
+      </div>
+  
+
+      <!-- 3 -->
+      <div class="item slider-card">
+        <div class="flex justify-center items-center">
+          <img src="image/sales-order.svg" alt="" class="w-full">
+        </div>
+      </div>
+  
+    <!-- 4 -->
+    <div class="item slider-card">
+      <div class="flex justify-center items-center">
+        <img src="image/voucher.svg" alt="" class="w-full">
+      </div>
+    </div>
+<!-- 5 -->
+<div class="item slider-card">
+  <div class="flex justify-center items-center">
+    <img src="image/welcome.svg" alt="" class="w-full">
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="item slider-card">
+  <div class="flex justify-center items-center">
+    <img src="image/about.svg" alt="" class="w-full">
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="item slider-card">
+  <div class="flex justify-center items-center">
+    <img src="image/company.svg" alt="" class="w-full">
+  </div>
+</div>
+ <!-- 8 -->
+ <div class="item slider-card">
+  <div class="flex justify-center items-center">
+    <img src="image/ledger.svg" alt="" class="w-full">
+  </div>
+</div>
+ <!-- 9 -->
+ <div class="item slider-card">
+  <div class="flex justify-center items-center">
+    <img src="image/payment.svg" alt="" class="w-full">
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+   
+
+
+  <!-- slider end -->
+</section>
+
+<!-- ABOUT SECTION END  -->
+
+
+
+<!-- Testimonials start -->
+<section>
+  <div class="flex justify-center items-center lg:gap-10 py-10 text-[#43916F] font-extrabold outfit uppercase text-xl gap-4">
+    <img src="image/keyicon (2).svg" alt="">
+    Testimonials
+    <img src="image/keyicon (1).svg" alt="">
+</div>
+<div class="p-2 lg:p-0">
+  <h2 class="font-extrabold lg:text-4xl text-2xl outfit text-center uppercase text-[#072B2C] lg:leading-[50px] ">Our happy users</h2>
+  <p class="text-[#072B2C] outfit text-center text-base font-normal mb-20">Lorem ipsum dolor sit amet consectetur. Quis faucibus senectus velit mauris nullam. Auctor vel <br> lorem sed in felis. Morbi dignissim facilisis arcu posuere.</p>
+</div>
+
+
+
+
+<div class="owl-carousel owl-theme mb-10 testimonial ">
+<!-- 1 item -->
+  <div class="item ">
+    <div class=" max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg border border-[#C4EDD7] testimonialbox">
+      <div class=" flex items-center xl:space-x-10 md:space-x-3"> 
+        <!-- Left Section: Image -->
+        <div class="lg:flex-shrink-0">
+          <img src="image/Rectangle 14186.svg" alt="Person 1" class="lg:w-28 lg:h-28 rounded-lg  ">
+        </div>
+    
+        <!-- Right Section: Testimonial Content -->
+        <div class="testimonialright">
+          <!-- Name and Title -->
+          <h4 class="text-[6px] outfit font-bold text-[#072B2C]">Fredi Allan</h4>
+          <p class="text-[#072B2C] outfit font-normal text-[3px]">Founder, ABC</p>
+    
+          <!-- Star Rating -->
+          <div class="flex items-center space-x-1 mt-2">
+            <span class="outfit"><img src="image/Group 1359.svg" alt=""></span>
+          </div>
+    
+          <!-- Testimonial Title -->
+          <p class="mt-2 text-xs font-bold outfit text-[#1A1E23]">"TIME AND MONEY SAVING"</p>
+    
+          <!-- Testimonial Description -->
+          <p class="mt-2 text-[#1A1E23] text-[5px] font-normal Aleo Aleop">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut erat <br> ligula ullamcorper quisque sed libero. Metus diam, ultrices et diam <br> dapibus purus sed nunc accumsan. Tristique ultrices vestibulum <br> vulputate curabitur nullam turpis. Diam sed id lorem sed.
+          </p>
+        </div>
+        </div>
+        </div>
+  
+      </div>
+
+      <div class="item">
+        <div class=" max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg border border-[#C4EDD7]">
+          <div class=" flex items-center lg:space-x-10 space-x-3"> 
+            <!-- Left Section: Image -->
+            <div class="lg:flex-shrink-0">
+              <img src="image/Rectangle 14186.svg" alt="Person 1" class="lg:w-28 lg:h-28 rounded-lg  ">
+            </div>
+        
+            <!-- Right Section: Testimonial Content -->
+            <div>
+              <!-- Name and Title -->
+              <h4 class="text-[6px] outfit font-bold text-[#072B2C]">Fredi Allan</h4>
+              <p class="text-[#072B2C] outfit font-normal text-[3px]">Founder, ABC</p>
+        
+              <!-- Star Rating -->
+              <div class="flex items-center space-x-1 mt-2">
+                <span class="outfit"><img src="image/Group 1359.svg" alt=""></span>
+              </div>
+        
+              <!-- Testimonial Title -->
+              <p class="mt-2 text-xs font-bold outfit text-[#1A1E23]">"TIME AND MONEY SAVING"</p>
+        
+              <!-- Testimonial Description -->
+              <p class="mt-2 text-[#1A1E23] text-[5px] font-normal Aleo Aleop">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut erat <br> ligula ullamcorper quisque sed libero. Metus diam, ultrices et diam <br> dapibus purus sed nunc accumsan. Tristique ultrices vestibulum <br> vulputate curabitur nullam turpis. Diam sed id lorem sed.
+              </p>
+            </div>
+            </div>
+            </div>
+      
+          </div>
+
+
+          <div class="item">
+            <div class=" max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg border border-[#C4EDD7]">
+              <div class=" flex items-center lg:space-x-10 space-x-3"> 
+                <!-- Left Section: Image -->
+                <div class="lg:flex-shrink-0">
+                  <img src="image/Rectangle 14186.svg" alt="Person 1" class="lg:w-28 lg:h-28 rounded-lg  ">
+                </div>
+            
+                <!-- Right Section: Testimonial Content -->
+                <div>
+                  <!-- Name and Title -->
+                  <h4 class="text-[6px] outfit font-bold text-[#072B2C]">Fredi Allan</h4>
+                  <p class="text-[#072B2C] outfit font-normal text-[3px]">Founder, ABC</p>
+            
+                  <!-- Star Rating -->
+                  <div class="flex items-center space-x-1 mt-2">
+                    <span class="outfit"><img src="image/Group 1359.svg" alt=""></span>
+                  </div>
+            
+                  <!-- Testimonial Title -->
+                  <p class="mt-2 text-xs font-bold outfit text-[#1A1E23]">"TIME AND MONEY SAVING"</p>
+            
+                  <!-- Testimonial Description -->
+                  <p class="mt-2 text-[#1A1E23] text-[5px] font-normal Aleo Aleop">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut erat <br> ligula ullamcorper quisque sed libero. Metus diam, ultrices et diam <br> dapibus purus sed nunc accumsan. Tristique ultrices vestibulum <br> vulputate curabitur nullam turpis. Diam sed id lorem sed.
+                  </p>
+                </div>
+                </div>
+                </div>
+          
+              </div>
+
+
+              
+
+          </div>
+  <!-- Right Item -->
+
+
+  
+  <!-- Add more items as needed -->
+
+
+<!-- <div class="owl-carousel owl-theme mb-10 ">
+  <div class="testimonial flex w-full">
+    <div class="w-full" >
+      <img src="image/Rectangle 14186.svg" alt="">
+
+    </div>
+    <div>
+      <h6>Fredi Allan</h6>
+      <p>Founder, ABC</p>
+      <img src="" alt="">
+      <h4>“Time and money saving”</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut erat ligula ullamcorper quisque sed libero. Metus diam, ultricies et diam dapibus purus sed nunc accumsan. Tristique ultrices vestibulum vulputate curabitur nullam turpis. Diam sed id lorem sed.</p>
+    </div>
+  </div> -->
+   <!-- <div class="testimonial bg-white rounded-lg shadow-lg p-4  ">
+      <img src="image/Rectangle 14186.svg" alt="Person 1" class="w-16 h-16 rounded-full mx-auto">
+      <h4 class="text-center text-xl font-semibold mt-2">Fred Allan</h4>
+      <p class="text-center text-gray-600 mt-1">⭐⭐⭐⭐⭐</p>
+      <p class="text-center text-sm text-gray-500 mt-2">"Time and Money Saving"</p>
+    </div>
+   -->
+
+  <!-- <div class="item p-4">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg border border-gray-200">
+  <div class="flex items-center space-x-6"> -->
+    <!-- Left Section: Image -->
+    <!-- <div class="flex-shrink-0">
+      <img src="person1.jpg" alt="Person 1" class="w-24 h-24 rounded-lg border-2 border-green-400">
+    </div> -->
+
+    <!-- Right Section: Testimonial Content -->
+    <!-- <div> -->
+      <!-- Name and Title -->
+      <!-- <h4 class="text-2xl font-bold text-gray-800">Fredi Allan</h4>
+      <p class="text-[#072B2C] text-[9px] outfit font-normal ">Founder, ABC</p> -->
+
+      <!-- Star Rating -->
+      <!-- <div class="flex items-center space-x-1 mt-2">
+        <span class="text-green-500">⭐⭐⭐⭐⭐</span>
+      </div> -->
+
+      <!-- Testimonial Title -->
+      <!-- <p class="mt-2 text-lg font-semibold text-gray-800">"TIME AND MONEY SAVING"</p> -->
+
+      <!-- Testimonial Description -->
+      <!-- <p class="mt-2 text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut erat ligula ullamcorper quisque sed libero. Metus diam, ultrices et diam dapibus purus sed nunc accumsan. Tristique ultrices vestibulum vulputate curabitur nullam turpis. Diam sed id lorem sed.
+      </p> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+
+    <!-- <div class="testimonial bg-white rounded-lg shadow-lg p-4  ">
+      <img src="image/Rectangle 14186.svg" alt="Person 1" class="w-16 h-16 rounded-full mx-auto">
+      <h4 class="text-center text-xl font-semibold mt-2">Fred Allan</h4>
+      <p class="text-center text-gray-600 mt-1">⭐⭐⭐⭐⭐</p>
+      <p class="text-center text-sm text-gray-500 mt-2">"Time and Money Saving"</p>
+    </div> -->
+</section>
+
+
+
+
+<!-- Testimonials end -->
+
+<!-- FOOTER SECTION START  -->
+<section>
+  <!-- Contact Section -->
+  <div class="bg-[#105F62] p-8  lg:p-[80px]">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Contact Info -->
+      <div class="text-white">
+        <h2 class="outfit uppercase text-lg md:text-xl lg:text-2xl font-bold mb-4">Contact Us</h2>
+        <p class="outfit uppercase font-extrabold text-2xl md:text-3xl lg:text-4xl mb-4">
+          We'd love <br> to hear from you!
+        </p>
+        <p class="outfit font-normal text-xs md:text-sm lg:text-base mb-4">
+          Whether you have a question, need support, or want to give <br> feedback, please reach out to us using the form below.
+        </p>
+        <ul>
+          <li class="flex items-center gap-5 text-white mb-5 text-xs md:text-sm">
+            <img src="image/PhoneCall (1).svg" alt="" class="">
+            <h1 class="outfit font-normal">Phone <br> <span class="outfit font-semibold text-base md:text-xl">+91 123 456 3698</span></h1>
+          </li>
+          <li class="flex items-center gap-5 text-white mb-5">
+            <img src="image/EnvelopeSimpleOpen (1).svg" alt="">
+            <h1>Email ID<br><span class="outfit font-semibold text-base md:text-xl">info@swarnim.com</span></h1>
+          </li>
+          <li class="flex items-center gap-5 text-white mb-5">
+            <img src="image/MapPin.svg" alt="">
+            <h1 class="outfit font-normal">Address <br><span class="text-xs md:text-sm">240, Identix House, Poddar Arcade to L. H. Road, Bhatar Road, Surat, Gujarat 395006</span></h1>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Form Section -->
+      <div class="bg-white p-6 md:p-6 lg:p-8 rounded-lg shadow-lg border border-[#C4EDD7]">
+        <form class="space-y-4">
+          <input type="text" placeholder="Full Name" class="w-full p-3 md:p-3 lg:p-4 outfit text-xs md:text-sm font-medium text-[#333333] bg-[#ECF4F1]" />
+          <div class="flex flex-col md:flex-row gap-5">
+            <input type="email" placeholder="Email" class="w-full p-3 md:p-3 lg:p-4 outfit text-xs md:text-sm font-medium text-[#333333] bg-[#ECF4F1]" />
+            <input type="tel" placeholder="Phone Number" class="w-full p-3 md:p-3 lg:p-4 outfit text-xs md:text-sm font-medium text-[#333333] bg-[#ECF4F1]" />
+          </div>
+          <input type="text" placeholder="Subject" class="w-full p-3 md:p-3 lg:p-4 outfit text-xs md:text-sm font-medium text-[#333333] bg-[#ECF4F1]" />
+          <textarea placeholder="Type a Message" class="w-full p-3 md:p-3 lg:p-4 outfit text-xs md:text-sm font-medium text-[#333333] bg-[#ECF4F1] h-[80px] md:h-[100px] lg:h-[120px]"></textarea>
+          <div class="flex flex-col md:flex-row gap-4 pt-4">
+            <button type="reset" class="bg-[#105F62] p-3 md:p-3 lg:p-4 w-full md:w-1/2 uppercase text-white outfit text-sm md:text-base font-semibold">Clear</button>
+            <button type="submit" class="bg-[#105F62] text-white p-3 md:p-3 lg:p-4 w-full md:w-1/2 uppercase outfit text-sm md:text-base font-semibold">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Section -->
+  <div class="container mx-auto py-10  xl:py-16 px-5  xl:px-20 flex flex-col md:flex-row items-center justify-between md:gap-[70px]">
+    <!-- Left Section: Chapter Image and Text -->
+    <div class="md:w-1/2 flex flex-col">
+      <img src="image/logo.svg" alt="Chapter 1" class="mb-4 w-[70%] lg:w-[50%]">
+      <p class="text-[#072B2C] text-justify outfit font-normal text-xs md:text-sm lg:text-base">
+        Lorem ipsum dolor sit amet consectetur. Fames quam amet sit <br> lacinia viverra. Ac sapien orci tortor mauris at.
+        Imperdiet <br> vulputate augue est quam nunc faucibus nunc risus cras. Vulputate <br> nisi ut etiam vitae ac. Enim mus est
+        faucibus nec et id purus. Erat <br> pulvinar eget eu dui massa eget. Morbi viverra nisl blandit nunc <br> senectus imperdiet accumsan.
+      </p>
+    </div>
+
+    <!-- Right Section: Newsletter Signup -->
+    <div class="md:w-1/2 mt-8 md:mt-0 text-center md:text-right">
+      <h3 class="md:text-xl lg:text-2xl font-black outfit text-[#43916F]">SUBSCRIBE OUR <br> LATEST NEWSLETTER</h3>
+      <p class="text-xs md:text-sm lg:text-base text-[#333333] font-normal mt-4 leading-5">
+        Join our online forums or communities where you can interact <br> with other Fix Pay Agents and get advice and support.
+      </p>
+      <div class="mt-4 md:mt-6 lg:mt-8 flex flex-col md:flex-row md:items-center justify-center md:justify-end">
+        <input type="email" placeholder="Email" class="p-2 w-full max-w-[300px] md:max-w-[400px] border border-[#C4EDD7] bg-[#ECF4F1]">
+        <button class="p-2 bg-[#105F62] text-white mt-2 md:mt-0 md:ml-2 outfit lg:px-4 md:px-3">SUBSCRIBE</button>
+      </div>
+      <div class="text-xs md:text-sm lg:text-base font-normal text-[#072B2C] outfit mt-5">
+        <a href="#" class="mr-2">Privacy</a> | 
+        <a href="#" class="mx-2">Terms</a> | 
+        <a href="#" class="mx-2">Legal</a> | 
+        <a href="#" class="ml-2">Cookie Preferences</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="container mx-auto text-black py-6 text-center flex flex-col md:flex-row justify-between items-center px-5  xl:px-20 border-t border-[#C4EDD7] space-y-4 md:space-y-0">
+    <p class="text-xs md:text-sm lg:text-base">© 2020 All Rights Reserved. Koffeeloaded</p>
+    <div class="flex justify-center space-x-4 mt-2 md:mt-0">
+      <a href="#"><img src="image/youtube-icon (2).svg" alt="YouTube" class="w-5 md:w-6 lg:w-8"></a>
+      <a href="#"><img src="image/instagram-icon (2).svg" alt="Instagram" class="w-5 md:w-6 lg:w-8"></a>
+      <a href="#"><img src="image/facebook-icon (2).svg" alt="Facebook" class="w-5 md:w-6 lg:w-8"></a>
+    </div>
+  </footer>
+</section>
+
+<!-- FOOTER SECTION END  -->
+
+
+      <script src="js/script.js"></script>
+      <script src="js/owlcousel.js"></script>
+      <script src="js/owlCousel1.js"></script>
+      <script>
+       $('.testimonial.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    center: true,
+    autoplay: true,
+    dots: false,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1  // Mobile view
+      },
+      600: {
+        items: 2  // Tablet view
+      },
+      1024: {
+        items: 3,  // 1024px breakpoint
+        margin: 10  // Optional: Adjust spacing between items
+      },
+      1280: {
+        items: 3.5  // Larger screens
+      }
+    }
+});
+
+      </script>
+      <script>
+       $('.slider .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    center: true,
+    autoplay: true,
+    dots: false,
+    // autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1  // Show 1 item on mobile
+      },
+      600: {
+        items: 2  // Show 2 items on tablets
+      },
+      1000: {
+        items: 3  // Show 3 items on larger screens
+      }
+    }
+  });
+      </script>
+      
+
+       
+
+
+      </body>
+
+</html>

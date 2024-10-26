@@ -1,0 +1,533 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.outfit{
+    font-family: "Outfit", sans-serif;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
+
+}
+.Aleo{
+    font-family: "Aleo", serif;
+}
+
+/* @layer base {
+    :root {
+        --color:#072B2C;
+    }
+  } */
+
+
+
+  /* hero section  */
+  .dot.active {
+    background-color: #43916F; /* Active dot color */
+  }
+  
+/* slider */
+button {
+  cursor: pointer;
+  z-index: 10;
+}
+button {
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prev, #next {
+  width: 40px; /* Button size */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#prev {
+  left: 10px; /* Adjust if needed */
+}
+
+#next {
+  right: 10px; /* Adjust if needed */
+}
+
+
+ /* Default styling for each item */
+ .testimonial {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    .testimonialbox {
+        width: 90% !important;  /* Adjust width for better alignment */
+        margin: 0 auto !important;  /* Center items */
+    }
+}
+
+
+
+
+.owl-carousel .owl-item.active.center .testimonialbox {
+  border-color: #43916F !important; /* Add a distinct border color for the center item */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important; /* Enhance the shadow for a standout effect */
+ 
+}
+
+
+  /* Styling for the center item to make it larger */
+  .owl-item.center .testimonial {
+    transform: scale(1.5) !important;  /* Enlarge the center item */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;  /* Add a deeper shadow */
+    
+  }
+  
+  /* Additional styles to further distinguish the center item */
+  .owl-item.center img {
+    width: 100%;  /* Enlarge the image in the center */
+    height: 100%; /* Enlarge the image in the center */
+  }
+
+  .owl-item.center h4 {
+    font-size: 12px;  /* Larger font for the center item heading */
+  }
+
+  .owl-item.center p {
+    font-size: 6px;  /* Larger font for the center item text */
+  }
+  .owl-item.center .Aleop{
+    font-size: 10px;
+  }
+
+
+
+  /* Media queries for responsiveness */
+
+  @media (max-width: 480px) {
+    .owl-item.center .testimonial {
+      transform: scale(1.1);  /* Slightly smaller enlargement on tablets */
+    }
+  
+    .owl-item img {
+      width: 60%;  /* Reduce image size on smaller screens */
+    }
+  
+    .owl-item h4 {
+      font-size: 8px;  /* Adjust heading font size for smaller screens */
+    }
+  
+    .owl-item p {
+      font-size: 4px;  /* Adjust paragraph font size */
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .owl-item.center .testimonial {
+      transform: scale(1.05);  /* Smaller enlargement on mobile */
+    }
+  
+    .owl-item img {
+      width: 40% !important ;  /* Further reduce image size on mobile */
+    }
+  
+    .owl-item h4 {
+      font-size: 6px !important;  /* Reduce heading font size for mobile */
+    }
+  
+    .owl-item p {
+      font-size: 3px !important;  /* Smaller paragraph font size for mobile */
+    }
+  }
+
+
+@media screen and (max-width: 1024px) {
+  .owl-item.center .testimonial {
+    transform: scale(1.05);  /* Smaller enlargement on mobile */
+  }
+
+  .owl-item img {
+    /* width: 20% !important;  Further reduce image size on mobile */
+  }
+
+  .testimonialright{
+    margin-right: 10px !important;
+  }
+  .owl-item h4 {
+    font-size: 6px;  /* Reduce heading font size for mobile */
+  }
+
+  .owl-item p {
+    font-size: 3px;  /* Smaller paragraph font size for mobile */
+  }
+}
+
+  /* optslilder */
+
+  .slider{
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .slider .owl-item.active.center .slider-card{
+    transform: scale(1.15);
+    opacity: 1;
+    /* background-color: #ccc; */
+    color: white;
+  }
+
+  .slider-card{
+    /* background-color: white; */
+    /* margin: 50px 10px 10px 10px; */
+    padding: 64px 0px 10px 10px;
+
+    border-radius: 5px;
+    /* box-shadow: 0 15px 45px -20px rgb(205, 191, 191,0.493); */
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s;
+    
+  }
+
+ 
+  .slider-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits without distortion */
+    border: 3px solid #105F62 !important;
+    border-radius: 10px;
+  }
+
+ 
+
+
+  
+
+  /* dot */
+  /* .dashed{
+    position: absolute;
+    content: '';
+    border-bottom: 1px dashed #072B2C;
+    border-top: 1px dashed #072B2C;
+    border-right-width: 1px;
+    border-left-width: 0px;
+    left: 350px;
+    height: 490px;
+    width: 260px;
+    top: 40px;
+    
+  } */
+  #border {
+    height: 495px;
+    width: 200px;
+    background: 
+      linear-gradient(90deg,  #072B2C, transparent 50%),  /* Top border */
+      linear-gradient(90deg, #072B2C, transparent 50%),  /* Bottom border */
+      linear-gradient(0deg, #072B2C, transparent 50%);    /* Right border */
+      
+    background-repeat: repeat-x, repeat-x, repeat-y;
+    background-size: 10px 1px, 10px 1px, 1px 10px;
+    background-position: 0 0, 0 100%, 100% 0;
+    
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+  
+    animation: border-dance 4s infinite linear;
+  }
+  
+  @keyframes border-dance {
+    0% {
+      background-position: 0 0, 0 100%, 100% 0;
+    }
+    100% {
+      background-position: 200px 0, 200px 100%, 100% 100px;
+    }
+  }
+  
+
+
+
+  /* 2box */
+
+  #border2 {
+      height: 245px;
+      width: 146px;
+    background: 
+      linear-gradient(90deg, #072B2C, transparent 50%),  /* Top border */
+      linear-gradient(90deg, #072B2C, transparent 50%),  /* Bottom border */
+      linear-gradient(0deg, #072B2C, transparent 50%);    /* Right border */
+      
+    background-repeat: repeat-x, repeat-x, repeat-y;
+    background-size: 10px 1px, 10px 1px, 1px 10px;
+    background-position: 0 0, 0 100%, 100% 0;
+    
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+  
+    animation: border-dance 4s infinite linear;
+  }
+  
+  @keyframes border-dance {
+    0% {
+      background-position: 0 0, 0 100%, 100% 0;
+    }
+    100% {
+      background-position: 200px 0, 200px 100%, 100% 100px;
+    }
+  }
+  
+
+
+  #border3 {
+      height: 248px;
+      width: 607px;
+      background: linear-gradient(90deg, #072B2C, transparent 50%);
+      background-repeat: repeat-x;
+      background-size: 10px 1px, 10px 1px, 1px 10px;
+      background-position: 0 0, 0 100%, 100% 0;
+      padding: 10px;
+      border-top: 1px solid white;
+      animation: border-dance 4s infinite linear;
+  }
+
+
+
+
+
+
+
+
+  /* Responsive Design */
+  @media screen and (max-width: 1440px){
+    #border {
+      height: 503px;
+          width: 150px;
+          background-size: 8px 1px, 8px 1px, 1px 8px;
+          left: 300px;
+    }
+  
+    #border2 {
+      height: 243px;
+      width: 109px;
+      background-size: 8px 1px, 8px 1px, 1px 8px;
+      left: 295px;
+    }
+  
+    #border3 {
+      height: 200px ;
+      width: 475px;
+      background-size: 8px 1px, 8px 1px, 1px 8px;
+      left: 295px;
+  }
+  }
+
+
+
+@media (max-width: 1024px) {
+  #border {
+    height: 503px ;
+    width: 150px ;
+    background-size: 8px 1px, 8px 1px, 1px 8px;
+    left: 232px;
+  }
+
+  #border2 {
+    height: 243px;
+    width: 109px;
+    background-size: 8px 1px, 8px 1px, 1px 8px;
+    left: 225px;
+  }
+
+  #border3 {
+    height: 200px ;
+    width: 404px;
+    background-size: 8px 1px, 8px 1px, 1px 8px;
+    left: 231px;
+}
+}
+
+@media (max-width: 768px) {
+  #border, #border2, #border3 {
+      display: none;
+  }
+
+}
+
+
+/* Responsive Design */
+
+
+@media screen and(max-width: 1440px) {
+  .box1dot1{
+    top: 31px !important;
+    left: 281px !important;
+
+  }
+  .box1dot2{
+    top: 532px !important;
+    left: 216px !important;
+
+  }
+  .box2dot1{
+    left: 215px !important;
+
+
+  }
+  .box2dot2{
+    top: 271px !important;
+    left: 278px !important;
+
+  }
+
+  .box3dot1{
+    left: 216px !important;
+
+  }
+
+  .box3dot2{
+    left: 453px !important;
+
+  }
+  .box3dot3{
+    left: 560px !important;
+
+  }
+}
+
+@media (max-width: 1024px){
+  .box1dot1{
+    left: 217px !important;
+
+  }
+  .box1dot2{
+    top: 531px !important;
+    left: 216px !important;
+
+  }
+  .box2dot1{
+    left: 215px !important;
+
+
+  }
+  .box2dot2{
+    top: 271px !important;
+    left: 217px !important;
+
+  }
+
+  .box3dot1{
+    left: 216px !important;
+
+  }
+
+  .box3dot2{
+    left: 370px !important;
+
+  }
+  .box3dot3{
+    left: 466px !important;
+
+  }
+  .broimage{
+    width: 50% !important;
+    margin-top: 20% !important;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  #border, #border2, #border3, .box1dot1, .box1dot2, .box2dot1 ,.box2dot2 , .box3dot1 , .box3dot2, .box3dot3 {
+    display: none;
+  }
+}
+
+
+  /* #border3 {
+    height: 100px;
+    width: 610px;
+    background: linear-gradient(90deg, red 50%, transparent 50%);
+    background-repeat: repeat-x;
+    background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+    background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+    padding: 10px;
+    animation: border-dance 4s infinite linear;
+    border-top: 1px solid;
+   }
+  @keyframes border-dance {
+    0% {
+      background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
+    }
+    100% {
+      background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
+    }
+  } */
+
+  /* .border3 {
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(90deg, red 50%, transparent 50%);
+    background-repeat: repeat-x;
+    background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+    background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+    padding: 10px;
+    animation: border-dance 4s infinite linear;
+    border-top: 1px solid;
+   }
+  @keyframes border-dance {
+    0% {
+      background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
+    }
+    100% {
+      background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
+    }
+  } */
+  /* #borderH{
+
+  } */
+  
+  /* .dashed{
+    background: linear-gradient(90deg, #000 50%, transparent 0);
+    background-repeat: repeat-x;
+    background-size: 10px 1px;
+    background-position: 0 100%;
+    border-radius: 5px;
+    padding: 1px;
+    animation: dash2 9s linear infinite;
+  }
+  @keyframes dash2 {
+    100% {
+    background-position: -100% 100%;
+}
+  } */
+  
+  /* .dashed-dot{
+    left: 345px;
+    top: 30px;
+    height: 20px;
+    width: 20px;
+    border: 3px solid white;
+    position: absolute;
+    animation: dash2 9s linear infinite;
+  } */
+  
+  /* .dashed-dot-b{ */
+    /* left: 345px; */
+    /* top: 520px; */
+    /* height: 20px; */
+    /* width: 20px; */
+    /* border: 3px solid black; */
+    /* position: absolute; */
+  /* } */
+
+  /* 2 dot */
+ 
+
+  /* OWL CAROSUL BUTTOM CHANGE   */
+  
